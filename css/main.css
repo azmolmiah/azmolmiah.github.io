@@ -1,0 +1,461 @@
+/*========== GLOBAL STYLES =============\*/
+* {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding-top: 7rem;
+}
+
+/* Components */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  background-color: #ffbd00;
+  border-radius: 360px;
+  padding: 14px 16px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid #ffbd00;
+  transition: all 0.2s ease-out 0s;
+}
+
+/* Layout */
+section {
+  padding: 1rem 0;
+  display: block;
+}
+
+.row {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1 {
+  width: 75%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.3%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Typography */
+h1 {
+  font-family: "Raleway", Sans-Serif;
+  text-transform: uppercase;
+  font-size: 44px;
+}
+
+h2,
+h3 {
+  font-family: "Raleway", Sans-Serif;
+  text-transform: uppercase;
+}
+
+a,
+p {
+  font-family: "Open Sans", Sans-Serif;
+  color: black;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.card {
+  padding: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card-shadow {
+  box-shadow: 0 8px 12px -6px rgba(0, 0, 0, 0.658),
+    0 18px 16px -16px rgba(0, 0, 0, 0.39);
+}
+
+.card img {
+  width: 100%;
+  max-height: 8rem;
+}
+
+.card .btn {
+  margin-top: 1rem;
+}
+
+.card .card-content {
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* @media (min-width: 992px){
+  .container {
+      max-width: 960px
+  }
+} */
+
+/* @media (min-width: 768px){
+  .container {
+      max-width: 720px
+  }
+} */
+
+/* @media (min-width: 576px){
+  .container {
+      max-width: 540px;
+  }
+}  */
+
+/* Global images */
+.logo {
+  width: auto;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+/* Nav styles */
+nav {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 12;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.349),
+    0 18px 16px -16px rgba(0, 0, 0, 0.39);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 14px 16px;
+  color: black;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #ffbd00;
+  transition: all 0.4s ease-in;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: #ffbd00;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  padding: 1rem 0;
+  float: right;
+}
+
+.nav-hover {
+  position: relative;
+}
+
+.nav-hover::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 10;
+  background-color: #ffbd00;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-hover:hover::before {
+  visibility: visible;
+  width: 85%;
+}
+
+/* Footer */
+#footer {
+  color: black;
+}
+
+#footer .footer-items {
+  display: inline-flex;
+  align-items: center;
+}
+
+#footer .logo {
+  padding: 1rem;
+}
+
+/*=============== HOME PAGE ================*/
+/* Header section */
+#header {
+  background-color: #efeff1;
+  height: 55%;
+  padding-bottom: 4rem;
+}
+
+#header .btn {
+  margin-top: 3rem;
+}
+
+.macbook {
+  position: absolute;
+  transform: translate(55%, -96%);
+}
+
+.macbook img {
+  height: 425px;
+  width: 805px;
+}
+
+video {
+  position: inherit;
+  height: 350px;
+  max-width: 665px;
+  z-index: 2;
+  transform: translate(90px, 8%);
+}
+
+/* Skills */
+#skills p {
+  text-transform: uppercase;
+  color: #ffbd00;
+  font-weight: bolder;
+}
+
+#skills i {
+  margin: 2rem 0;
+  color: #c8c8c8;
+}
+
+.pin--vertical--strikethrough {
+  height: 400px;
+  position: absolute;
+  top: 32.46;
+  left: 50%;
+  z-index: 3;
+  width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+    180deg,
+    #ffbd00,
+    #ffbd00 50%,
+    rgba(255, 189, 0, 0) 0,
+    rgba(255, 189, 0, 0)
+  );
+  background-position: 0 0;
+  background-size: 100% 200%;
+}
+
+/* Projects */
+#projects {
+  background-color: #efeff1;
+  padding: 5rem 0 8rem 0;
+}
+
+#projects p {
+  text-transform: uppercase;
+  color: #ffbd00;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+
+#projects .pin-social--left:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  bottom: -160%;
+  transition: width 0.5s ease 0.6s;
+  width: 35vw;
+  height: 1px;
+  background-color: #ffbd00;
+}
+
+#projects .social {
+  border: 1px solid #ffbd00;
+  background: #fff;
+  border-radius: inherit;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+/*============== OUTCOME GLOBAL ============*/
+#outcome-header {
+  background-color: #efeff1;
+  height: 55%;
+}
+
+.header-underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  transition: width 0.5s ease 0.6s;
+  width: 20vw;
+  height: 1px;
+  background-color: #ffbd00;
+}
+
+#outcome-header {
+  padding: 2rem 0;
+}
+
+span {
+  color: #ffbd00;
+}
+
+.content {
+  padding-left: 20px;
+}
+
+.number {
+  font-family: "Raleway", Sans-Serif;
+  font-size: 210px;
+  font-weight: 900;
+  color: #ffbd00;
+  padding-left: 50%;
+  animation: nudge 5s linear infinite alternate;
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(150px, 0);
+  }
+
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+
+/*========== Unit One ==========*/
+#page-one .pin--vertical--strikethrough {
+  height: 2930px;
+  left: 28%;
+}
+
+/*========== Unit Two ==========*/
+#page-two .pin--vertical--strikethrough {
+  height: 1850px;
+  left: 28%;
+}
+
+/*========== Unit Three ==========*/
+#page-three .pin--vertical--strikethrough {
+  height: 1340px;
+  left: 28%;
+}
+
+/*========== Unit Two Outcome One ==========*/
+#page-four .pin--vertical--strikethrough {
+  height: 1800px;
+  left: 28%;
+}
+
+/* Contact */
+form {
+  padding: 3rem 0;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin: 1rem 0;
+}
+
+input[type="submit"] {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+}
