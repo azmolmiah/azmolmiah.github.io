@@ -455,6 +455,7 @@ textarea {
 }
 
 input[type="submit"] {
+  margin-top: 2rem;
   width: 100%;
   cursor: pointer;
   border: none;
