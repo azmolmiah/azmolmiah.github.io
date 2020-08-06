@@ -367,11 +367,7 @@ video {
   height: 55%;
 }
 
-.header-underline::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 38%;
+.header-underline {
   transition: width 0.5s ease 0.6s;
   width: 20vw;
   height: 1px;
@@ -379,7 +375,7 @@ video {
 }
 
 #outcome-header {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 span {
