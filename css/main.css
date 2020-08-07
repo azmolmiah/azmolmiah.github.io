@@ -393,6 +393,16 @@ nav {
   padding: 1rem 1rem 1rem 0;
 }
 
+#footer .footer-social i {
+  padding: 1rem;
+  color: #ffbd00;
+}
+
+#footer .footer-social i:hover {
+  color: #000000;
+  transition: 0.5s ease;
+}
+
 /*=============== HOME PAGE ================*/
 /* Header section */
 #header {
