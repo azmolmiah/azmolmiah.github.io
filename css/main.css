@@ -1,7 +1,4 @@
 /*========== GLOBAL STYLES =============\*/
-* {
-  overflow-x: hidden;
-}
 
 html {
   scroll-behavior: smooth;
@@ -81,7 +78,6 @@ section {
 }
 
 .container {
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -163,11 +159,113 @@ p {
   }
 } */
 
-/* @media (min-width: 576px){
-  .container {
-      max-width: 540px;
+@media (max-width: 576px) {
+  body {
+    padding-top: 5rem;
   }
-}  */
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .container {
+    max-width: 540px !important;
+    padding-right: 1rem !important;
+  }
+
+  .col-4 {
+    width: 50%;
+  }
+
+  .col-3,
+  .col-2 {
+    width: 100%;
+  }
+
+  .card {
+    padding: 5px;
+  }
+
+  /* Nav */
+  .logo {
+    height: 3rem !important;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .topnav-mobile {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Header */
+  .macbook {
+    display: none;
+  }
+
+  #header h1,
+  #header p,
+  #header .btn {
+    text-align: center;
+  }
+
+  #header .btn {
+    margin-top: 1rem !important;
+  }
+
+  /* Skills */
+  /* Projects */
+  .pin--vertical--strikethrough {
+    height: 850px !important;
+  }
+
+  /* Outcome Global */
+  #outcome-header {
+    overflow: hidden;
+  }
+  .number {
+    font-family: "Raleway", Sans-Serif;
+    font-size: 210px;
+    font-weight: 900;
+    color: #ffbd00;
+    padding: 0 !important;
+  }
+
+  .content,
+  #outcome-header p,
+  #outcome-header h1,
+  #outcome-header .header-underline {
+    margin-left: 10px !important;
+  }
+
+  #outcome-header .header-underline {
+    width: 60vw;
+  }
+
+  #page-one .pin--vertical--strikethrough {
+    height: 3520px !important;
+    left: 8% !important;
+  }
+
+  #page-two .pin--vertical--strikethrough {
+    height: 2450px !important;
+    left: 8% !important;
+  }
+
+  #page-three .pin--vertical--strikethrough {
+    height: 1700px !important;
+    left: 8% !important;
+  }
+
+  #page-four .pin--vertical--strikethrough {
+    height: 2430px !important;
+    left: 8% !important;
+  }
+}
 
 /* Global images */
 .logo {
@@ -177,6 +275,10 @@ p {
 }
 
 /* Nav styles */
+.topnav-mobile {
+  display: none;
+}
+
 nav {
   padding: 1rem 0;
   text-transform: uppercase;
@@ -214,7 +316,7 @@ nav {
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.topnav .active {
   color: #ffbd00;
 }
 
@@ -255,8 +357,8 @@ nav {
   align-items: center;
 }
 
-#footer .logo {
-  padding: 1rem;
+#footer a {
+  padding: 1rem 1rem 1rem 0;
 }
 
 /*=============== HOME PAGE ================*/
@@ -273,7 +375,7 @@ nav {
 
 .macbook {
   position: absolute;
-  transform: translate(55%, -96%);
+  transform: translate(52%, -96%);
 }
 
 .macbook img {
